@@ -109,13 +109,10 @@ manuel [ ~ ]$ az storage account create --name manuelsfirststorage1 --resource-g
     "virtualNetworkRules": []
   },
  
-{
-  
-}
-```  
-# deploy a Blob-Container
+ ```  
+#deploy a Blob-Container
 
-  generate the key
+ generate the key
 
   manuel [ ~ ]$ az storage account keys list --account-name manuelsfirststorage1 --resource-group rg-basic-storage --query "[0].value" -o tsv
 
