@@ -108,36 +108,9 @@ manuel [ ~ ]$ az storage account create --name manuelsfirststorage1 --resource-g
     "resourceAccessRules": null,
     "virtualNetworkRules": []
   },
-  ```json
+ 
 {
-  "primaryEndpoints": {
-    "blob": "https://manuelsfirststorage1.blob.core.windows.net/",
-    "dfs": "https://manuelsfirststorage1.dfs.core.windows.net/",
-    "file": "https://manuelsfirststorage1.file.core.windows.net/",
-    "internetEndpoints": null,
-    "microsoftEndpoints": null,
-    "queue": "https://manuelsfirststorage1.queue.core.windows.net/",
-    "table": "https://manuelsfirststorage1.table.core.windows.net/",
-    "web": "https://manuelsfirststorage1.z6.web.core.windows.net/"
-  },
-  "primaryLocation": "westeurope",
-  "privateEndpointConnections": [],
-  "provisioningState": "Succeeded",
-  "publicNetworkAccess": null,
-  "resourceGroup": "rg-basic-storage",
-  "routingPreference": null,
-  "sasPolicy": null,
-  "secondaryEndpoints": null,
-  "secondaryLocation": null,
-  "sku": {
-    "name": "Standard_LRS",
-    "tier": "Standard"
-  },
-  "statusOfPrimary": "available",
-  "statusOfSecondary": null,
-  "storageAccountSkuConversionStatus": null,
-  "tags": {},
-  "type": "Microsoft.Storage/storageAccounts"
+  
 }
 ```  
 # deploy a Blob-Container
@@ -146,11 +119,11 @@ manuel [ ~ ]$ az storage account create --name manuelsfirststorage1 --resource-g
 
   manuel [ ~ ]$ az storage account keys list --account-name manuelsfirststorage1 --resource-group rg-basic-storage --query "[0].value" -o tsv
 
-export AZURE_STORAGE_KEY="fvhB8us9/qVp3wBRW9ZcgNQQFZsLASUAlFxunobwBCASFZK1J/qZgKoe+x9YYvxmHf1OZx8QEQD9+AStHH/vPg=="
+export AZURE_STORAGE_KEY=""
 manuel [ ~ ]$ echo $AZURE_STORAGE_KEY | head -c 20; echo
 fvhB8us9/qVp3wBRW9Zc
 
-manuel [ ~ ]$ export AZURE_STORAGE_ACCOUNT_ACCOUNT="manuelsfirststorage1"
+manuel [ ~ ]$ export AZURE_STORAGE_ACCOUNT="manuelsfirststorage1"
 manuel [ ~ ]$ echo $AZURE_STORAGE_ACCOUNT
 
 Deploy the blob container
