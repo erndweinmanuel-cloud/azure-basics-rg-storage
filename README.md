@@ -40,7 +40,7 @@ Main goals of this Project
 }
 manuel [ ~ ]$
 
-# Depoly Storage Account
+# Deploy Storage Account
 
 manuel [ ~ ]$ az storage account create --name manuelsfirststorage1 --resource-group rg-basic-storage --location westeurope --sku Standard_LRS
 {
@@ -108,6 +108,8 @@ manuel [ ~ ]$ az storage account create --name manuelsfirststorage1 --resource-g
     "resourceAccessRules": null,
     "virtualNetworkRules": []
   },
+  ```json
+{
   "primaryEndpoints": {
     "blob": "https://manuelsfirststorage1.blob.core.windows.net/",
     "dfs": "https://manuelsfirststorage1.dfs.core.windows.net/",
@@ -136,13 +138,13 @@ manuel [ ~ ]$ az storage account create --name manuelsfirststorage1 --resource-g
   "storageAccountSkuConversionStatus": null,
   "tags": {},
   "type": "Microsoft.Storage/storageAccounts"
-
-  # deploy a Blob-Container
+}
+```  
+# deploy a Blob-Container
 
   generate the key
 
   manuel [ ~ ]$ az storage account keys list --account-name manuelsfirststorage1 --resource-group rg-basic-storage --query "[0].value" -o tsv
-[Warning] This output may compromise security by showing secrets. Learn more at: https://go.microsoft.com/fwlink/?linkid=secret-key==
 
 export AZURE_STORAGE_KEY="fvhB8us9/qVp3wBRW9ZcgNQQFZsLASUAlFxunobwBCASFZK1J/qZgKoe+x9YYvxmHf1OZx8QEQD9+AStHH/vPg=="
 manuel [ ~ ]$ echo $AZURE_STORAGE_KEY | head -c 20; echo
