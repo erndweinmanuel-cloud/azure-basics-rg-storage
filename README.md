@@ -48,11 +48,6 @@ Finished[#############################################################]  100.000
  command:
  az storage blob list --container-name demo-container --account-name $STORAGE_ACCOUNT --account-key $ACCOUNT_KEY --output table
 
-output:
-Name       Blob Type    Blob Tier    Length    Content Type    Last Modified              Snapshot
----------  -----------  -----------  --------  --------------  -------------------------  ----------
-hello.txt  BlockBlob    Hot          30        text/plain
-
 # cleanup
 
 command:
