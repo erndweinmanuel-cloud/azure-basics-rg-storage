@@ -40,8 +40,6 @@ az storage container create --name demo-container --account-name $STORAGE_ACCOUN
 command:
 az storage blob upload --container-name demo-container --file hello.txt --name hello.txt --account-name $STORAGE_ACCOUNT --account-key $ACCOUNT_KEY --output table
 
-output
-Finished[#############################################################]  100.0000%
 
 # verify blob upload
 
