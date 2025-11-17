@@ -34,10 +34,6 @@ STORAGE_ACCOUNT=basicstorage$RANDOM
 command:
 az storage container create --name demo-container --account-name $STORAGE_ACCOUNT --account-key $ACCOUNT_KEY --public-access off --output table
 
-output:
-Created
----------
-True
 
 # upload test-file
 
