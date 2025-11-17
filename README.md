@@ -11,6 +11,28 @@ Main goals of this Project
 
  no portal clicks
 
+# deploy a Resource Group
+
+command:
+az group create --name rg-basic-storage --location westeurope --output table
+
+Output:
+Location    Name
+----------  ----------------
+westeurope  rg-basic-storage
+
+# deploy a storage account
+
+command:
+
+
+
+
+
+
+
+
+
 
 
 
