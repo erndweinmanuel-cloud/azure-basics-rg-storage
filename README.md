@@ -35,6 +35,13 @@ az storage blob list --container-name demo-container --account-name $STORAGE_ACC
 # cleanup
 az group delete --name rg-basic-storage --yes --no-wait
 
+## Learnings
+- First hands-on Azure CLI experience
+- Working with environment variables
+- Secure handling of keys
+- Understanding core Azure resources (RG, Storage, Blobs)
+
+
 
 
 
